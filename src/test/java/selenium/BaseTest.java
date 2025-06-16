@@ -5,11 +5,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class BaseTest {
+public class BaseTest{
 
 	public static WebDriver driver;
 	
-	public static void launch(String browser)
+	public static void launch(String browser) 
 	{
 		if (browser.equals("chrome"))
 		{
@@ -28,10 +28,10 @@ public class BaseTest {
 	
 	public static void navigate(String url)
 	{
+		System.out.println("Before driver.get()");
 		driver.get(url);
-	}
-	public static void main(String[] args) {
+		System.out.println("After driver.get()");
+
 
 	}
-
 }
