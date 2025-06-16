@@ -10,10 +10,10 @@ public class Browser {
 		WebDriver driver;
 		//WebDriverManager.chromedriver().setup();
 		//System.setProperty("webdriver.chromedriver","/home/testsopsguru/Downloads/chrome-linux64");
-		driver = new ChromeDriver();
-		driver.get("https://digiparikshak.com/");
-		System.out.println("Page title is: " + driver.getTitle());
-		//driver.close();
+//		driver = new ChromeDriver();
+//		driver.get("https://digiparikshak.com/");
+//		System.out.println("Page title is: " + driver.getTitle());
+//		driver.close();
 		
 		driver = new FirefoxDriver();
 		driver.get("https://www.google.co.in/");
